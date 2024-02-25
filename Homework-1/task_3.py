@@ -9,4 +9,4 @@ c = Decimal(input("Enter third side of triangle "))
 s = (a + b + c) / 2
 TriangleArea = sqrt(s * (s - a) * (s - b) * (s - c))
 
-print(f"Area of triangle is {round(TriangleArea, 2)}, Parameter of triangle is {s * 2} \n")
+print(f"Area of triangle is {round(TriangleArea, 2)}, Parameter of triangle is {s * 2}")

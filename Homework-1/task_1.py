@@ -6,4 +6,4 @@ surname = input("Enter your surname ")
 age = int(input("Enter your age "))
 
 print()
-print(f"Hello {name} {surname}, You are {age} years old. \n")
+print(f"Hello {name} {surname}, You are {age} years old.")
