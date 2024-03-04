@@ -8,7 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .idea/misc.xml
+ homework-3
 .idea/workspace.xml
+ main
 .Python
 build/
 develop-eggs/
