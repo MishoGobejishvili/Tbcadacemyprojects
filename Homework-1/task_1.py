@@ -7,3 +7,4 @@ age = int(input("Enter your age "))
 
 print()
 print(f"Hello {name} {surname}, You are {age} years old.")
+
