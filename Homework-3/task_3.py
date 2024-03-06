@@ -4,26 +4,10 @@ import random
 # 4 ფერი (clubs (♣), diamonds (♦), hearts (♥) and spades (♠)) და 13 მნიშვნელობა
 # (A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2))
 
-colour = random.randrange(0, 4)
-card = random.randrange(2, 15)
+colour = "♣♦♥♠"
+value = "AKQJ98765432"
 
-if colour == 0:
-    print("clubs ", end="")
-elif colour == 1:
-    print("diamonds ", end="")
-elif colour == 2:
-    print("hearts ", end="")
-elif colour == 3:
-    print("spades ", end="")
-
-if card == 11:
-    print("A", end="")
-elif card == 12:
-    print("K", end="")
-elif card == 13:
-    print("Q", end="")
-elif card == 14:
-    print("J", end="")
+if random.randint(0, 13) == 13:
+    print(random.choice(colour), 10)
 else:
-    print(card)
-
+    print(random.choice(colour), random.choice(value))

@@ -16,10 +16,12 @@ previous_btc = converter.convert_to_btc_on(usd_paid_in_bitcoin, 'USD', purchase_
 up_to_date_btc = converter.convert_to_btc(usd_paid_in_bitcoin, 'USD')
 print(previous_btc - up_to_date_btc)
 
+if month_of_purchase <= 12 and day_of_purchase <= 31:
+    print("Incorrect purchase date ")
+
 if previous_btc > up_to_date_btc:
     print(f"You are in profit of {converter.convert_btc_to_cur(previous_btc - up_to_date_btc, 'USD')} USD")
 elif previous_btc < up_to_date_btc:
     print(f"You are in loss of {converter.convert_btc_to_cur(up_to_date_btc - previous_btc, 'USD')} USD")
 else:
     print("There is no profit or loss")
-

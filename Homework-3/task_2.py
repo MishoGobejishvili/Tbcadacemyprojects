@@ -9,5 +9,5 @@ month_of_birth = int(input("Enter month of birth: "))
 day_of_birth = int(input("Enter day of birth: "))
 date_of_birth = datetime(year_of_birth, month_of_birth, day_of_birth)
 
-print("You were born on", datetime.strftime(date_of_birth, "%A"))
-
+if month_of_birth <= 12 and day_of_birth <= 31:
+    print("You were born on", datetime.strftime(date_of_birth, "%A"))
