@@ -15,3 +15,5 @@ elif 10 >= input_number > 0:
         print("4, ", end="")
     if input_number % 5 == 0:
         print("5, ", end="")
+elif input_number < 0:
+    print("Number is less than zero")
