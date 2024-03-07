@@ -6,8 +6,8 @@
 number = int(input("Enter number: "))
 
 if 0 < number < 1000:
-    for i in range(number + 1):
-        if i != 0 and number % i == 0:
+    for i in range(1, number + 1):
+        if number % i == 0:
             print(i, end=" ")
 else:
     print("Incorrect input. Enter number between 0 and 1000")
