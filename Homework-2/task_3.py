@@ -11,9 +11,9 @@ elif 10 >= input_number > 0:
         print("2, ", end="")
     if input_number % 3 == 0:
         print("3, ", end="")
-    if input_number % 4 == 0:
-        print("4, ", end="")
     if input_number % 5 == 0:
         print("5, ", end="")
+    if input_number % 7 == 0:
+        print("7, ", end="")
 elif input_number < 0:
     print("Number is less than zero")
