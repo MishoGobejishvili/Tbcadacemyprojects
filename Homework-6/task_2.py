@@ -6,8 +6,9 @@ amount_of_tries = 3
 print("Enter password: ", end="")
 
 for i in range(0, amount_of_tries):
-    if input() != password and i != amount_of_tries - 1:
-        print("Try again: ", end="")
-    else:
+    user_input = input()
+    if user_input == password:
         print("Welcome back")
         break
+    elif user_input != password and i != amount_of_tries - 1:
+        print("Try again: ", end="")
