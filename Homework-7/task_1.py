@@ -15,7 +15,7 @@ if not (0 <= n < 20):
     print("Invalid input")
     sys.exit(1)
 
-while summary < n:
+while i < n:
     if i % 2 == 0:
         before_last_item = summary
         print(before_last_item, end=" ")
