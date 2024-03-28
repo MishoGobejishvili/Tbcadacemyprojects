@@ -8,7 +8,7 @@ sign = ''
 hour = input_date[input_date.find('T') + 1:input_date.find('T') + 3]
 timezone = input_date[input_date.find('.'):]
 input_format_date = "%Y-%m-%dT%H:%M:%S.%f%z"
-output_format_date = "%d-%m-%Y '%M:%S%z"
+output_format_date = "%d-%m-%Y '%M:%S"
 formatted_date = datetime.strptime(input_date[:], input_format_date).strftime(output_format_date)
 
 if input_date.find('T') != -1 and int(hour) > 12:

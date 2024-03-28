@@ -3,12 +3,18 @@
 
 user_input_one = input("Input:\n")
 user_input_two = input("")
+text_one = user_input_one
+text_two = user_input_two
 output = "Yes"
 
-for c in user_input_two:
-    if user_input_one.find(c) == -1:
+if len(user_input_two) > len(user_input_one):
+    text_one = user_input_two
+    text_two = user_input_one
+
+for c in text_one:
+    if text_two.find(c) == -1:
         output = "No"
     else:
-        user_input_one = user_input_one.replace(c, "", 1)
+        text_two = text_two.replace(c, "", 1)
 
 print("Output:", output)
